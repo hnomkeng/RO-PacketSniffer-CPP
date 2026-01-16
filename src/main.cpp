@@ -4,7 +4,6 @@
 #include <vector>
 
 #include "gameplay/exp_calculator/ExpCalculator.h"
-#include "pixelbot/PixelBot.h"
 #include "public/Sniffer.h"
 
 namespace
@@ -44,12 +43,6 @@ int main(int argc, char* argv[])
             std::thread exp_show(ExpCalculator::show_exp);
             capture();
             exp_show.join();
-        }
-        else if (arg == "--shops")
-        {
-            std::thread shop_capture(PixelBot::run);
-            capture();
-            shop_capture.join();
         }
         else
         {

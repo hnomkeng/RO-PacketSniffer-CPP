@@ -469,5 +469,9 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/c++,visualstudio,visualstudiocode,cmake
 .idea/*
 build/*
-!libs/external/libpcap/lib/*.lib
+!libs/external/libpcap/
+!libs/external/libpcap/lib/
+!libs/external/libpcap/lib/ARM64
+!libs/external/libpcap/lib/x64
+!libs/external/libpcap/lib/**/*.lib
 saved_packets/*
